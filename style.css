@@ -1,0 +1,253 @@
+body {
+	background: -webkit-linear-gradient(Indigo, DeepSkyBlue,#483D8B);
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+}
+#butopen{
+	position: absolute;
+	background-color: lightgray;
+	opacity: 0.5;
+	width: 30px;
+	height: 50px;
+	font-size: 30px;
+	margin: auto;
+	z-index: 9000;
+	-webkit-transition: all 1s ease-in-out 0s;
+	transition: all 1s ease-in-out 0s;
+}
+
+#settings{
+	position: absolute;
+	width: 250px;
+	height: 100vh;
+	background-color: #4848ff;
+	z-index: 10000;
+	left: -250px;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+#maskGreen{
+	width: 100%;
+	height: 100vh;
+	background-color: green;
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+}
+#maskRed{
+	width: 100%;
+	height: 100vh;
+	background-color: red;
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+}
+#angryBorderLeft{ 
+	position:absolute;
+	width: 90px;
+	height: 100%;
+	background-color: red;
+	z-index: 1005;
+	left: -100px;
+	-webkit-transition: all 1s ease-in-out 0s;
+	transition: all 1s ease-in-out 0s;
+}
+#angryLeft{
+	position: absolute;
+	width: 10px;
+	height: 100%;
+	z-index: 1005;
+	right: -10px;
+	background-image: url(angryLeft.png);
+	background-size: 10px 20px;
+}
+#angryBorderRight{
+	position: absolute;
+	right: -100px;
+	width: 90px;
+	height: 100%;
+	background-color: red;
+	z-index: 1005;
+	-webkit-transition: all 1s ease-in-out 0s;
+	transition: all 1s ease-in-out 0s;
+}
+#angryRight{
+	position: absolute;
+	width: 10px;
+	height: 100%;
+	z-index: 1005;
+	left: -10px;
+	background-image: url(angryRight.png);
+	background-size: 10px 20px;
+}
+#angryBorderTop{
+	position: absolute;
+	width: 100%;
+	height: 90px;
+	background-color: red;
+	z-index: 1004;
+	top: -100px;
+	-webkit-transition: all 1s ease-in-out 0s;
+	transition: all 1s ease-in-out 0s;
+}
+#angryTop{
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	z-index: 1004;
+	bottom: -10px;
+	background-image: url(angryTop.png);
+	background-size: 20px 10px;
+}
+#angryBorderBottom{
+	position: absolute;
+	width: 100%;
+	height: 90px;
+	background-color: red;
+	z-index: 1004;
+	bottom: -100px;
+	-webkit-transition: all 1s ease-in-out 0s;
+	transition: all 1s ease-in-out 0s;
+}
+#angryBottom{
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	z-index: 1004;
+	top: -10px;
+	background-image: url(angryBottom.png);
+	background-size: 20px 10px;
+}
+.pole {
+	border: 5px solid black;
+	width: 350px;
+	height: 550px;
+	top: 5px;
+	background-color: lightgray;
+	position: relative;
+	box-shadow: 10px 10px 15px 15px #191970;
+	margin: auto;
+	z-index: 1000;
+	overflow: hidden;
+	-webkit-transform-origin:50% 50% ;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: scale(1,1);
+}
+img {
+  border: 1px solid red;
+  position: absolute;
+	
+}
+/*#canvas{
+	position: absolute;
+	z-index: 1000;
+}*/
+#canvas2{
+	position: absolute;
+	left: -2px;
+	top: -1px;
+	z-index: 1000;
+	
+}
+#canvas3{
+	position: absolute;
+	left: -2px;
+	top: -1px;
+	z-index: 1001;
+	border: 1px solid red;
+}
+#circleGreen1{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	background-image: url(firecircle.gif);
+	background-size: 10px 10px;
+	border: 2px solid green;
+	border-radius: 50%;
+	display: none;
+}
+
+#box-but-set{
+	position: absolute;
+	width: 30%;
+	height: 30vh;
+	z-index: 9000;
+	bottom: 0px;
+	right: 0px;
+	-webkit-transform-origin:100% 100% ;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: scale(1,1);
+}
+#but1 {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 30%;
+	}
+#but2 {
+  position: relative;
+  display: inline-block;
+  margin: 2.5% 5% 2.5% 0;
+  width: 40%;
+  height: 30%;
+	}
+#but3 {
+  position: relative;
+  display: inline-block;
+  margin: 2.5% 0 2.5% auto;
+  width: 40%;
+  height: 30%;
+  right: 0px; 
+  float: right;
+	}
+#but4 {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 30%;
+  clear: both;
+	}
+#but0 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 10%;
+  height: 10%;
+  z-index: 1000;
+  opacity: 1;
+  -webkit-transition: all 1s ease-in-out 0s;
+	transition: all 1s ease-in-out 0s;
+	}
+
+#level {
+	position: absolute;
+  top: 5%;
+  right: 10%;
+  width: 10%;
+  height: 3%;
+  color: #dc143c;
+  font-weight: bolder;
+  z-index: 1000;
+}
+
+.class-pole-size{
+	display: inline;
+}
+.settings-block{
+	margin: 7px;
+}
+#butclose{
+	position: relative;
+	left: 230px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+}
